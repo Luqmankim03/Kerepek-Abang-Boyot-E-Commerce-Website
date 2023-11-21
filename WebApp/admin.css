@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e0e0ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: rgb(187, 12, 12);
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.admin {
+    color: #f2f2f2;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.admin a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.admin b {
+    margin-left: 8px;
+}
+
+.welcome {
+    color: #f2f2f2;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.welcome a {
+    color: #f2f2f2;
+    text-decoration: none;
+    margin-right: 17px;
+}
+
+.welcome a:hover {
+    color: yellow;
+}
+
+.welcome .logout a:hover {
+    color: yellow;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    flex-basis: 100%;
+
+}
+
+input[type="text"],
+input[type="file"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    flex-basis: 48%;
+}
+
+input[type="submit"] {
+    background-color: rgb(187, 12, 12);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(160, 12, 12);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: rgb(187, 12, 12);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.delete-message {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}

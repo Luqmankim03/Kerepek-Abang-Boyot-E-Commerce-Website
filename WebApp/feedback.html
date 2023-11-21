@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Feedback</title>
+	<link rel="icon" href="Logo.png" type="image/icon type">
+	<link href="feedback.css" rel="stylesheet" type="text/css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<div class="contact-in">
+		<div class="contact-map">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31880.299385060156!2d101.69209028042182!3d2.8051697689859587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdc7512d002b69%3A0x7b34de58a3e5343e!2sTaman%20Indah%20Klia%2C%2043900%20Sepang%2C%20Selangor!5e0!3m2!1sen!2smy!4v1697820926971!5m2!1sen!2smy"
+				width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+		<div class="contact-form">
+			<h1>Give Feedback</h1>
+			<form action="feedback.php" method="post" enctype="multipart/form-data">
+				<input type="text" name="name" placeholder="Name" class="contact-form-txt" required />
+				<input type="email" name="email" placeholder="Email" class="contact-form-txt" required />
+				<textarea name="message" placeholder="Message" class="contact-form-textarea" required></textarea>
+				<label for="image" class="contact-form-file-label">Select Image:</label>
+				<input type="file" name="image" id="image" accept="image/*" class="contact-form-file" required />
+				<input type="submit" name="submit" class="contact-form-btn" value="Send Message"
+					onclick="showPopup()" />
+			</form>
+		</div>
+	</div>
+
+	<a href="HomePage.php" class="btn btn-primary"
+		style="position: absolute; bottom: 80px; left: 550px; padding: 10px 20px; background-color: #007bff; color: #fff; text-decoration: none; border: 1px solid #0056b3; border-radius: 5px; transition: background-color 0.3s;"
+		onmouseover="this.style.backgroundColor='#0056b3'" onmouseout="this.style.backgroundColor='#007bff'">
+		Back to Homepage
+	</a>
+
+	<div id="feedbackPopup" class="popup">
+		<div class="popup-content">
+			<h2>Thanks for the Feedback!</h2>
+			<p>Your feedback has been received.</p>
+		</div>
+	</div>
+
+	<script>
+		function showPopup() {
+			var popup = document.getElementById("feedbackPopup");
+			popup.style.display = "block";
+
+			setTimeout(function () {
+				closePopup();
+				window.location.href = "feedback.html";
+			}, 5000);
+		}
+
+		function closePopup() {
+			var popup = document.getElementById("feedbackPopup");
+			popup.style.display = "none";
+		}
+	</script>
+
+</body>
+
+</html>

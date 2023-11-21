@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="Logo.png" type="image/icon type">
+    <meta charset="utf-8">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="otp.css">
+</head>
+<body>
+    <form>
+        <h2>Enter OTP</h2>
+        <input type="text" id="otp" placeholder="Enter OTP">
+        <button type="button" onclick="verifyOTP()">Verify OTP</button>
+    </form>
+    <script>
+        function verifyOTP() {
+            var inputOTP = document.getElementById("otp").value;
+            if (inputOTP == "1234") {
+                window.location.href = "newpassword.php";
+            } else {
+                alert("Invalid OTP, please try again.");
+            }
+        }
+    </script>
+</body>
+</html>

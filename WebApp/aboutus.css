@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.navbar{
+    box-sizing: border-box;
+    background-color: rgb(187, 12, 12);
+    height: 39px;
+}
+.navbar .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .title a{
+    font-family: montserrat;
+    color: rgba(255, 255, 255, 0.945);
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    line-height: 32px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.navbar .title a:hover{
+    color: yellow;
+}
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #ddd;
+}
+.row{
+    width: 100%;
+    padding: 50px 100px;
+}
+.image-section{
+    width: 30%;
+    float: left;
+}
+.image-section img{
+    width: 100%;
+    height: auto;
+}
+.content{
+    width: 60%;
+    float: left;
+    margin-left: 50px;
+}
+.content h1{
+    font-size: 70px;
+    letter-spacing: 3.5px;
+    margin-top: 25px;
+    color: #222;
+}
+.content h2{
+    font-size: 40px;
+    font-family: sans-serif;
+    color: maroon;
+    margin-top: 25px;
+}
+.content p{
+    font-size: 20px;
+    font-family: serif;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+    .image-section{
+        width: 100%;
+        float: none;
+    }
+    .content{
+        width: 100%;
+        float: none;
+        margin-left: 0px;
+    }
+}
+
